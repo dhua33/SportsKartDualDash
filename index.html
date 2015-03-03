@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Sports Kart Dual Dash</title>
+    <script src="js/phaser.min.js"></script>
+    <script src="js/Boot.js"></script>
+    <script src="js/Preloader.js"></script>
+    <script src="js/MainMenu.js"></script>
+    <script src="js/Game.js"></script>
+
+<style>
+body
+{
+    color: #000000;
+    font-family: "Avenir", Verdana, sans-serif;
+}
+#readme
+{
+    margin-top: 10px;
+}
+</style>
+
+</head>
+<body bgcolor = "#A6E6FA">
+<script>
+(function() {
+		var game = new Phaser.Game( 800, 600, Phaser.AUTO, 'game');
+    game.state.add('Boot', boot);
+    game.state.add('Preloader', preloader);
+    game.state.add('MainMenu', mainmenu);
+    game.state.add('Game', main);
+    game.state.start('Boot');
+    })();
+</script>
+<div id="game"></div>
+<div id="readme">
+<h2>Sports Kart Dual Dash</h2>
+<ul>
+
+<li><strong>High Concept:</strong>
+Control two cars and try to get to the end.
+</li>
+
+<li><strong>Player Experience Goals:</strong>
+Multitasking by controlling two cars and avoiding getting off track.
+</li>
+
+<li><strong>Genre:</strong>
+Racing Puzzle Maze
+</li>
+
+<li><strong>Game play:</strong>
+Players use arrow keys and wasd to control two different cars and navigate the track to reach the end. The w and up arrow key accelerates the cars, and the left, right, a, and d keys turn the cars. The s and down keys decelerate. Having one car too far from the other and making it go off screen will make the player lose.
+</li>
+
+<li><strong>Prototype goal:</strong>
+Create a simple racing puzzle maze game using tilemaps and having the player control two cars.
+</li>
+
+<li><strong>Features:</strong>
+Simple gameplay, top-down vehicle movement, and one player controlling two cars simultaneously.
+</li>
+
+<li><strong>Setting/Premise:</strong>
+A race track.
+</li>
+
+<li><strong>Story:</strong>
+None.
+</li>
+
+<li><strong>Target Audience:</strong>
+Everyone 10 and up who has interest in sports cars and multitasking.
+</li>
+
+<li><strong>Play time:</strong>
+3-10 mins.
+</li>
+
+<li><strong>Strategies:</strong>
+If it's too hard, slow down and maybe even control one car at a time.
+</li>
+
+<li><strong>Prototype Assets:</strong>
+Tilemap: http://opengameart.org/content/race-track-tiles 
+Cars: 
+http://opengameart.org/content/car-racer 
+Music: 
+"Forest of Purple Mist" (Chimpazilla, Emunator, Jordanrooben / http://ocremix.org) 
+"Day's End" (Sole Signal, Tweex, / http://ocremix.org)
+</li>
+
+<li><strong>Prototype Closest Other Game: Tanks, http://www.gamedevacademy.org/html5-phaser-tutorial-top-down-games-with-tiled/</strong>
+
+</li>
+
+</ul>
+</div>
+</body>
+</html>
