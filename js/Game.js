@@ -15,6 +15,7 @@ main.prototype = {
 				this.walls = this.map.createLayer('Walls');
 				this.bg.resizeWorld();
 				this.map.setCollisionBetween(1, 400, true, 'Walls');
+				this.line = this.add.sprite(490, 65, 'line');
 				
 				// player sprites and properties
 				this.car1 = this.add.sprite(270, 2900, 'car1');
@@ -39,8 +40,8 @@ main.prototype = {
 				this.keys.space = this.input.keyboard.addKey(Phaser.Keyboard.SPACEBAR);
 				
 				// parameters
-				this.maxSpd = 175;
-				this.slow = 5;
+				this.maxSpd = 80;
+				this.slow = 4;
 				this.camera.follow(this.cam);
 				
 				this.win = this.add.sprite(0, 0, 'win');

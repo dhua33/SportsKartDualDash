@@ -9,11 +9,13 @@ preloader.prototype = {
 				this.load.image('title', 'assets/title.png');
 				this.load.tilemap('map', 'assets/raceMap.json', null, Phaser.Tilemap.TILED_JSON);
 				this.load.image('tiles', 'assets/raceTrack.jpg');
+				this.load.image('win', 'assets/win.png');
+				this.load.image('fail', 'assets/fail.png');
 				//cars
 				this.load.image('car1', 'assets/car1.png');
 				this.load.image('car2', 'assets/car2.png');
 				//audio
-				
+				this.load.audio('music', 'assets/music.mp3');
 		},
 		create: function() {
 				this.state.start('MainMenu');

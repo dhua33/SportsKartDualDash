@@ -11,6 +11,7 @@ preloader.prototype = {
 				this.load.image('tiles', 'assets/raceTrack.jpg');
 				this.load.image('win', 'assets/win.png');
 				this.load.image('fail', 'assets/fail.png');
+				this.load.image('line', 'assets/finish.png');
 				//cars
 				this.load.image('car1', 'assets/car1.png');
 				this.load.image('car2', 'assets/car2.png');
