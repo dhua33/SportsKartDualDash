@@ -10,6 +10,9 @@ mainmenu.prototype = {
 				space.onDown.add(this.play, this);
 		},
 		play: function() {
+				// audio
+				this.music = this.add.audio('music', 0.3, true);
+				this.music.play();
 				this.state.start('Game');
 		}
 }
